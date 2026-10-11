@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512" role="img" aria-label="BurnScope">
+  <rect width="512" height="512" rx="112" fill="url(#bg)"/>
+  <g transform="translate(256 256) scale(0.94) translate(-256 -256)">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#12408a"/>
+      <stop offset="1" stop-color="#061a3f"/>
+    </linearGradient>
+    <linearGradient id="flame" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe27a"/>
+      <stop offset="0.45" stop-color="#ff9a3c"/>
+      <stop offset="1" stop-color="#e0362c"/>
+    </linearGradient>
+    <linearGradient id="core" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#fffbe0"/>
+      <stop offset="1" stop-color="#ffc94a"/>
+    </linearGradient>
+    <linearGradient id="rim" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#fff3c4"/>
+      <stop offset="0.5" stop-color="#ffc247"/>
+      <stop offset="1" stop-color="#c47a16"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#ffb347" stop-opacity="0.75"/>
+      <stop offset="1" stop-color="#ffb347" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="7" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+  <circle cx="232" cy="232" r="205" fill="url(#halo)"/>
+  <!-- mango -->
+  <path d="M322 322 L428 428" stroke="#7a4a12" stroke-width="46" stroke-linecap="round"/>
+  <path d="M322 322 L428 428" stroke="url(#rim)" stroke-width="34" stroke-linecap="round"/>
+  <path d="M336 312 L420 396" stroke="#fff6d6" stroke-width="6" stroke-linecap="round" opacity="0.7"/>
+  <!-- cristal -->
+  <circle cx="222" cy="222" r="128" fill="#bfe3ff" fill-opacity="0.12"/>
+  <!-- llama dentro de la lupa -->
+  <g filter="url(#glow)">
+    <path d="M222 112C238 156 286 182 286 246C286 285 258 314 222 314C186 314 158 285 158 246C158 210 182 196 194 164C204 182 211 187 215 176C219 160 218 136 222 112Z" fill="url(#flame)"/>
+    <path d="M222 204C232 230 256 244 256 274C256 294 241 308 222 308C203 308 188 294 188 274C188 254 200 248 207 231C213 241 218 240 222 204Z" fill="url(#core)"/>
+  </g>
+  <!-- llamas que salen del aro -->
+  <g filter="url(#glow)">
+    <path d="M338 58C352 92 396 106 388 156C383 188 354 196 342 178C331 162 344 148 332 128C323 113 337 90 338 58Z" fill="url(#flame)"/>
+    <path d="M342 126C350 142 370 150 366 172C363 184 350 188 344 180C339 172 346 166 341 156C338 150 343 140 342 126Z" fill="url(#core)"/>
+  </g>
+  <!-- aro -->
+  <circle cx="222" cy="222" r="128" fill="none" stroke="#7a4a12" stroke-width="38"/>
+  <circle cx="222" cy="222" r="128" fill="none" stroke="url(#rim)" stroke-width="28"/>
+  <path d="M130 170A108 108 0 0 1 200 112" fill="none" stroke="#ffffff" stroke-width="9" stroke-linecap="round" opacity="0.75"/>
+  <!-- destellos -->
+  <path d="M414 62 Q414 92 444 92 Q414 92 414 122 Q414 92 384 92 Q414 92 414 62Z" fill="#fff7d6" opacity="1.0"/>
+  <path d="M92 312 Q92 332 112 332 Q92 332 92 352 Q92 332 72 332 Q92 332 92 312Z" fill="#ffe9a0" opacity="0.95"/>
+  <path d="M452 247 Q452 262 467 262 Q452 262 452 277 Q452 262 437 262 Q452 262 452 247Z" fill="#ffffff" opacity="0.9"/>
+  <path d="M120 49 Q120 62 133 62 Q120 62 120 75 Q120 62 107 62 Q120 62 120 49Z" fill="#ffffff" opacity="0.85"/>
+  <path d="M402 176 Q402 186 412 186 Q402 186 402 196 Q402 186 392 186 Q402 186 402 176Z" fill="#ffe9a0" opacity="0.9"/>
+</g>
+</svg>

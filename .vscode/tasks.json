@@ -1,0 +1,29 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "BurnScope: iniciar en desarrollo",
+      "type": "npm",
+      "script": "start",
+      "isBackground": true,
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "BurnScope: compilar para Live Server",
+      "type": "npm",
+      "script": "build:fast",
+      "problemMatcher": []
+    },
+    {
+      "label": "BurnScope: pruebas",
+      "type": "npm",
+      "script": "test",
+      "problemMatcher": [],
+      "group": "test"
+    }
+  ]
+}
